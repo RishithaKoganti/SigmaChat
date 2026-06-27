@@ -1,0 +1,137 @@
+.sidebar{
+    background-color: var(--sidebar-bg);
+    color: var(--text-color);
+    height : 100vh;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo{
+    font-size: large;
+    color: var(--text-color);
+}
+.newChatBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.2rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border: solid rgba(255,255,255,0.1);
+    background-color: var(--sidebar-bg);
+    color: var(--text-color);
+    height: 3rem;
+}
+.newChatBtn span{
+    font-size: 1.4rem;
+}
+.newChatBtn:hover{
+    background-color: var(--hover-bg);
+    cursor: pointer;
+}
+.historyWrapper {
+    flex: 1;
+    overflow-y: auto;
+}
+.history{
+    margin: 0.2rem;
+    padding: 0.1rem;
+}
+.history li{
+    list-style-type: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+    border: solid 0.1rem transparent;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.history li:hover{
+    background-color: var(--hover-bg);
+    border-radius: 0.4rem;
+}
+.threadTitle {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80%;
+}
+.optionsIcon {
+    cursor: pointer;
+    padding: 0.2rem;
+    color: var(--text-color);
+}
+.optionsIcon:hover {
+    color: var(--input-text);
+}
+.threadDropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: var(--input-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    z-index: 20;
+    overflow: hidden;
+    min-width: 100px;
+}
+.threadDropdownItem {
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.threadDropdownItem:hover {
+    background-color: var(--hover-bg);
+}
+.deleteOption {
+    color: #ff4d4d;
+}
+.deleteOption i {
+    color: #ff4d4d;
+}
+.sign{
+    padding: 1rem;
+    font-size: 1rem;
+    border-top: solid 0.05rem var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.userAvatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.googleLoginBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    color: #212121;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s;
+    width: 100%;
+}
+.googleLoginBtn:hover {
+    background-color: #f1f1f1;
+}

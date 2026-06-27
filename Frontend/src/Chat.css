@@ -1,0 +1,96 @@
+.chatsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.chatsContainer h1 {
+    color: var(--text-color);
+    margin-top: 2rem;
+}
+
+.chats {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.userDiv {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.userMessage {
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    padding: 1rem;
+    border-radius: 1.5rem;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.gptDiv {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.gptMessage {
+    background-color: transparent;
+    color: var(--text-color);
+    padding: 1rem;
+    max-width: 90%;
+    word-wrap: break-word;
+}
+
+.gptMessage p {
+    margin-bottom: 0.5rem;
+}
+
+.gptMessage pre {
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.gptMessage code {
+    background-color: var(--input-bg);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.3rem;
+}
+
+.codeBlockWrapper {
+    background-color: #1e1e1e;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.codeHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2d2d;
+    padding: 0.5rem 1rem;
+    color: #e0e0e0;
+    font-size: 12px;
+}
+
+.copyBtn {
+    background: none;
+    border: none;
+    color: #e0e0e0;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.copyBtn:hover {
+    color: #ffffff;
+}
